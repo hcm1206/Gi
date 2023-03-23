@@ -1,0 +1,38 @@
+#main {
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+#main > h2{
+    color: red;
+}
+
+#main > #mainTable {
+    background-color: #F0F0C0;
+}
+
+#mainTable {
+    padding: 30px;
+}
+
+#mainTable table {
+    margin: 0 auto;
+    border: solid 1px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#mainTable p {
+    margin-top: 0;
+}
+
+#mainTable td{
+    width: 200px;
+    border: solid 1px;
+}
+
+#mainTable th{
+    border: solid 1px;
+}
+
