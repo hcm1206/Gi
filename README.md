@@ -9,3 +9,9 @@
   
 > - 추신 예비역 하사 김진영은 응애입니다 1학년보다 못한 지식을 가지고있음
 > - 주 4시간 자바스크립트 공부, 1.5 주차 php 과제 진행
+
+### Git Branch 관련해서
+<img width="492" alt="branch" src="https://user-images.githubusercontent.com/96714275/229692026-14d73d50-f8ac-45d6-89c3-25d0a5701ccf.PNG">
+뭘 하다 이렇게 꼬였었는지는 모르겠으나  
+branch 이 따위로 꼬아놓으면 개같이 멸망하니 branch를 딸 때는 계층적으로 따서 사용하시기 바랍니다.  
+자세한건 나중에 설명함  
