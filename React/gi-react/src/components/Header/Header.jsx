@@ -1,24 +1,25 @@
 import React from "react";
 import styled from "styled-components";
+import HeaderTop from "./HeaderTop";
+import HeaderMenu from "./HeaderMenu";
+
+
 
 function Header() {
     return (
         <HeadWrapper>
-            <H1>Header</H1>
+            <HeaderTop/>
+            <HeaderMenu/>
         </HeadWrapper>
     )
 }
 
 const HeadWrapper = styled.div`
-    width: 100%;
-    height: 100px;
-    background-color: #A0F0F0;
+    width: 100vw;
+    height: 160px;
+    background-color: #F0FFFF;
     margin: 0;
     padding: 0;
-`
-
-const H1 = styled.h1`
-    margin: 0;
 `
 
 export default Header;

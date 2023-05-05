@@ -4,7 +4,8 @@ import styled from "styled-components";
 function Footer() {
     return (
         <FooterWrapper>
-            <H1>Footer</H1>
+            <H1>Gi Project</H1>
+            <VersionP>version 0.0.0.1</VersionP>
         </FooterWrapper>
     )
 }
@@ -12,13 +13,22 @@ function Footer() {
 const FooterWrapper = styled.div`
     width: 100%;
     height: 100px;
-    background-color: #A0A0A0;
+    background-color: #E0F8F8;
     margin: 0;
     padding: 0;
+    text-align: center;
 `
 
 const H1 = styled.h1`
     margin: 0;
+    padding: auto;
+    overflow: hidden;
+    color: #6b9098;
+`
+
+const VersionP = styled.p`
+    font-size: 10pt;
+    color: #6b9098;
 `
 
 export default Footer;
