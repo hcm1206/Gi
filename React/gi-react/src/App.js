@@ -1,7 +1,7 @@
 import './App.css';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 import Body from './components/Body';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 import styled from 'styled-components';
 
 // import React, {useEffect} from "React";
@@ -11,7 +11,7 @@ function App() {
   return (
     <Wrapper>
       <Header/>
-        <Body/>
+      <Body/>
       <Footer/>
     </Wrapper>
   );
