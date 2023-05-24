@@ -59,7 +59,6 @@ const HeadMenuItem = styled(HeadMenuLi)`
     &:hover{
         background-color: #1fffff;
     }
-    transition: 0.5s;
 `
 
 const HeadMenuLink = styled.div`
