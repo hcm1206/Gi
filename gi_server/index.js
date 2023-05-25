@@ -1,7 +1,10 @@
 const express = require('express');
+const routes = require('./routes.js');
 const path = require('path');
 
 const app = express();
+
+// app.use(routes);
 
 // 'main_images' 폴더를 정적 파일 경로로 지정합니다.
 app.use('/main_images', express.static(path.join(__dirname, 'main_images')));
@@ -16,6 +19,10 @@ app.get('/', function(req, res) {
 // 서버를 5000번 포트로 엽니다.
 app.listen(5000, function() {
   console.log('서버가 시작되었습니다.');
+});
+
+app.get('*', function (req, res) {
+  res.sendFile(path.join(__dirname, '/build/index.html'));
 });
 
 // const express = require('express');
