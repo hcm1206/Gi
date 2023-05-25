@@ -10,8 +10,8 @@ function FrontPage() {
 }
 
 const Wrapper = styled.div`
-    width: 100vh;
-    height: 100%;
+    width: 100%;
+    height: 1000px;
     margin: 0;
     padding: 0;
 `
@@ -28,7 +28,6 @@ const P = styled.p`
 const ServiceP = styled(P)`
     font-size: 24pt;
     font-weight: bold;
-    background-color: linear-gradient( to right, rgba(1f,ff,ff,0), rgba(1f,ff,ff,1));
     background: linear-gradient( to right, rgba(31,255,255,1), rgba(31,255,255,0));
 `
 

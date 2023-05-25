@@ -1,10 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import {useNavigate} from 'react-router-dom';
+
+
 
 function HeaderLogIn() {
+    // const navigate = useNavigate();
+
     return (
         <HeaderLogInWrapper>
-            <HeaderLogInForm method="POST">
+            <HeaderLogInForm method="POST" >
                 <IDSection>
                     <IDDiv>ID</IDDiv>
                     <IDInput type="text" name="loginID"/>
@@ -15,7 +20,8 @@ function HeaderLogIn() {
                 </PWDSection>
                 <ButtonSection>
                     <LogInButton type="submit">Log In</LogInButton>
-                    <SignUpButton>Sign Up</SignUpButton>
+                    <SignUpButton type="button">Sign Up</SignUpButton>
+                    {/* onClick={() => navigate('/signup')} */}
                 </ButtonSection>
             </HeaderLogInForm>
         </HeaderLogInWrapper>

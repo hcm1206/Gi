@@ -48,6 +48,7 @@ const HeadMenuLi = styled.li`
     text-align: center;
     padding: auto;
     justify-content: center;
+    transition: 0.2s;
 `
 
 const HeadMenuOpen = styled(HeadMenuLi)`
@@ -59,6 +60,7 @@ const HeadMenuItem = styled(HeadMenuLi)`
     &:hover{
         background-color: #1fffff;
     }
+    transition: 0.5s;
 `
 
 const HeadMenuLink = styled.div`

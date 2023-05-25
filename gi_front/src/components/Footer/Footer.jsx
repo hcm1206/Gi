@@ -11,8 +11,9 @@ function Footer() {
 }
 
 const FooterWrapper = styled.div`
+    position: relative;
     width: 100%;
-    height: 100px;
+    height: 200px;
     background-color: #E0F8F8;
     margin: 0;
     padding: 0;
@@ -22,13 +23,14 @@ const FooterWrapper = styled.div`
 const H1 = styled.h1`
     margin: 0;
     padding: auto;
+    padding-top: 20px;
     overflow: hidden;
-    color: #6b9098;
+    color: #404040;
 `
 
 const VersionP = styled.p`
     font-size: 10pt;
-    color: #6b9098;
+    color: #404040;
 `
 
 export default Footer;
