@@ -15,8 +15,8 @@
 > - 현창민(hcm1206) : 테크니컬 디렉터, 프론트엔드, Git 관리
 
 ## 참고 Wiki 페이지
-<a href="https://github.com/hcm1206/Gi/wiki/1%EC%B0%A8--%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B3%84%ED%9A%8D%EC%84%9C-V1">프로젝트 계획서(1차)</a>
-<a herf="https://github.com/hcm1206/Gi/wiki/%EC%9D%BC%EA%B8%B0%EC%9E%A5-DB-%EA%B3%84%ED%9A%8D(%EC%88%98%EC%A0%95%EC%A4%91)">DB 설계 계획</a>
+<a href="https://github.com/hcm1206/Gi/wiki/1%EC%B0%A8--%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B3%84%ED%9A%8D%EC%84%9C-V1">프로젝트 계획서(1차)</a>  
+<a href="https://github.com/hcm1206/Gi/wiki/%EC%9D%BC%EA%B8%B0%EC%9E%A5-DB-%EA%B3%84%ED%9A%8D(%EC%88%98%EC%A0%95%EC%A4%91)">DB 설계 계획</a>
 
 ## 개발 참고 사항
 이제 최상단 디렉토리(Gi_Project)에서 터미널 켜고 `npm start` 명령어 입력 시  
