@@ -17,17 +17,17 @@ const Wrapper = styled.div`
 
 `
 
-const ImgWrapper = styled.div`
-    display: flex;
-    justify-content: center;
-`
+// const ImgWrapper = styled.div`
+//     display: flex;
+//     justify-content: center;
+// `
 
-const OGSImg = styled.img`
-    margin: 2% auto;
-    position: relative;
-    width: 50vw;
-    left: 25vw;
-`
+// const OGSImg = styled.img`
+//     margin: 2% auto;
+//     position: relative;
+//     width: 50vw;
+//     left: 25vw;
+// `
 
 const H1 = styled.h1`
     margin: 5%;

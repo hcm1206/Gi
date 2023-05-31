@@ -1,6 +1,7 @@
 const express = require('express');
-const routes = require('./routes.js');
+// const routes = require('./routes.js');
 const path = require('path');
+const routetest = require("./Router/RouterTest");
 
 const app = express();
 
@@ -9,6 +10,9 @@ const app = express();
 // 'main_images' 폴더를 정적 파일 경로로 지정합니다.
 app.use('/main_images', express.static(path.join(__dirname, 'main_images')));
 app.use(express.static(path.join(__dirname, 'build')));
+
+// api 테스트
+app.use("/api", routetest);
 
 // 라우터에 GET 요청 핸들러를 등록합니다.
 app.get('/', function(req, res) {

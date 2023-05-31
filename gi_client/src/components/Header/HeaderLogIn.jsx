@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {useNavigate} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 
 
@@ -20,7 +20,7 @@ function HeaderLogIn() {
                 </PWDSection>
                 <ButtonSection>
                     <LogInButton type="submit">Log In</LogInButton>
-                    <SignUpButton type="button">Sign Up</SignUpButton>
+                    <Link to="/signup"><SignUpButton type="button">Sign Up</SignUpButton></Link>
                     {/* onClick={() => navigate('/signup')} */}
                 </ButtonSection>
             </HeaderLogInForm>

@@ -1,15 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import HeaderLogIn from "./HeaderLogIn";
+import {Link} from "react-router-dom";
 
 
 function HeaderTop() {
     return (
         <HeaderTopWrapper>
             <LogoWrapper>
-                <a href="/">
+                <Link to="/">
                     <LogoImg src="imgs/Gi_Logo.png" alt="Gi Logo"/>
-                </a>
+                </Link>
             </LogoWrapper>
             <H1>Welcome To Gi Project</H1>
             <HeaderLogIn/>
