@@ -19,14 +19,14 @@ function HeaderTop() {
 }
 
 const HeaderTopWrapper = styled.div`
-    height: 120px;
+    height: 70%;
     display: flex;
     justify-content: space-between;
 `
 
 const LogoWrapper = styled.div`
-    height: 80px;
-    margin: 20px;
+    height: 80%;
+    margin: 10px;
 `
 
 const LogoImg = styled.img`

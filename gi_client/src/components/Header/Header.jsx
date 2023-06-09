@@ -16,7 +16,7 @@ function Header() {
 
 const HeadWrapper = styled.div`
     width: 100vw;
-    height: 160px;
+    height: 15vh;
     background-color: #F0FFFF;
     margin: 0;
     padding: 0;

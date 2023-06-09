@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const TBDOnClick = () => {
     alert("서비스 준비 중입니다.");
@@ -10,7 +11,7 @@ function HeaderMenu() {
         <HeadMenuWrapper>
             <HeadMenuUl>
                 <HeadMenuOpen/>
-                <HeadMenuItem onClick={TBDOnClick}><HeadMenuLink>Diary</HeadMenuLink></HeadMenuItem>
+                <HeadMenuItem><Link to="/diary" style={{ textDecoration: 'none', color: "black" }}><HeadMenuLink>Diary</HeadMenuLink></Link></HeadMenuItem>
                 <HeadMenuItem onClick={TBDOnClick}><HeadMenuLink>TBD</HeadMenuLink></HeadMenuItem>
                 <HeadMenuItem onClick={TBDOnClick}><HeadMenuLink>TBD</HeadMenuLink></HeadMenuItem>
                 <HeadMenuItem onClick={TBDOnClick}><HeadMenuLink>TBD</HeadMenuLink></HeadMenuItem>
@@ -22,7 +23,7 @@ function HeaderMenu() {
 
 const HeadMenuWrapper = styled.nav`
     width: 100vw;
-    height: 40px;
+    height: 30%;
     background-color: #E0F8F8;
     margin: 0;
     padding: 0;
@@ -67,7 +68,7 @@ const HeadMenuLink = styled.div`
     display: block;
     text-align: center;
     text-decoration: none;
-    margin: 10px 0;
+    margin: 6% 0;
     padding: 0;
 `
 

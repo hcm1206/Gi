@@ -21,7 +21,6 @@ function HeaderLogIn() {
                 <ButtonSection>
                     <LogInButton type="submit">Log In</LogInButton>
                     <Link to="/signup"><SignUpButton type="button">Sign Up</SignUpButton></Link>
-                    {/* onClick={() => navigate('/signup')} */}
                 </ButtonSection>
             </HeaderLogInForm>
         </HeaderLogInWrapper>
@@ -32,11 +31,11 @@ function HeaderLogIn() {
 const HeaderLogInWrapper = styled.div`
     width: 15vw;
     min-width: 120px;
-    height: 100px;
+    height: 80%;
     float: right;
     background-color: #b8fefa;
     margin: auto;
-    margin-right: 20px;
+    margin-right: 2%;
     padding: 0;
     border-radius: 20px;
 `
@@ -48,7 +47,8 @@ const HeaderLogInForm = styled.form`
 
 // ID 입력/PWD 입력/버튼 영역 분리하는 섹션
 const Section = styled.div`
-    height: 30px;
+    height: 30%;
+    margin: 0;
 `
 
 // 로그인 창 글자 부분

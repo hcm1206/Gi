@@ -1,17 +1,18 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import styled from "styled-components";
 
 function FrontPage() {
     return (
         <Wrapper>
-            <TextDiv><ServiceP>애플리케이션</ServiceP></TextDiv>
+            <Link to="/diary" style={{ textDecoration: 'none', color: "black" }}><TextDiv><ServiceP>일기는 일기장에</ServiceP></TextDiv></Link>
         </Wrapper>
     )
 }
 
 const Wrapper = styled.div`
     width: 100%;
-    height: 1000px;
+    height: 85vh;
     margin: 0;
     padding: 0;
 `

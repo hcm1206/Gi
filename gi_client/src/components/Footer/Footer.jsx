@@ -13,7 +13,7 @@ function Footer() {
 const FooterWrapper = styled.div`
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 20vh;
     background-color: #E0F8F8;
     margin: 0;
     padding: 0;
