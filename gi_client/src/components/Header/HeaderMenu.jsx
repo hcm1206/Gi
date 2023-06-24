@@ -1,17 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import moment from 'moment';
 
 const TBDOnClick = () => {
     alert("서비스 준비 중입니다.");
 }
 
 function HeaderMenu() {
+
+    const year = moment().year();
+    const month = moment().month()+1;
+
     return (
         <HeadMenuWrapper>
             <HeadMenuUl>
                 <HeadMenuOpen/>
-                <HeadMenuItem><Link to="/diary" style={{ textDecoration: 'none', color: "black" }}><HeadMenuLink>Diary</HeadMenuLink></Link></HeadMenuItem>
+                <HeadMenuItem><Link to={`/diary/${year}-${month}`} style={{ textDecoration: 'none', color: "black" }}><HeadMenuLink>Diary</HeadMenuLink></Link></HeadMenuItem>
                 <HeadMenuItem onClick={TBDOnClick}><HeadMenuLink>TBD</HeadMenuLink></HeadMenuItem>
                 <HeadMenuItem onClick={TBDOnClick}><HeadMenuLink>TBD</HeadMenuLink></HeadMenuItem>
                 <HeadMenuItem onClick={TBDOnClick}><HeadMenuLink>TBD</HeadMenuLink></HeadMenuItem>

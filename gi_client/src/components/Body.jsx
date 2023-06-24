@@ -7,16 +7,14 @@ import SignUpPage from "./SignUpPage/SignUpPage";
 import CalendarPage from "./DiaryPage/CalendarPage/CalendarPage";
 import ErrorPage from "./ErrorPage/ErrorPage";
 
-// 라우팅 처리 예정
-
 function Body() {
     return (
         <BodyWrapper>
-            {/* {<FrontPage/>} */}
             <Routes>
                 <Route exact path='/' element={<FrontPage/>}/>
                 <Route path='/signup' element={<SignUpPage/>}/>
-                <Route path='/diary' element={<CalendarPage/>}/>
+                <Route path='/diary/:date' exact element={<CalendarPage/>}/>
+                <Route path='/diary' element={<SignUpPage/>}/>
                 <Route path='/*' element={<ErrorPage/>}/>
             </Routes>
         </BodyWrapper>

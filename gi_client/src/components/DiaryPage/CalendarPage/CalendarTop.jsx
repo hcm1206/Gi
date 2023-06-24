@@ -1,8 +1,14 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import moment from 'moment';
 
-function CalendarTop() {
+function CalendarTop(props) {
     const dt = new Date();
+
+    const date = props.date;
+    const dateMonth = moment(date).month();
+
+    console.log(dateMonth);
 
     return (
         <Wrapper>
@@ -18,8 +24,8 @@ function CalendarTop() {
 }
 
 const Wrapper = styled.div`
-    width: 100%;
-    height: 20%;
+    width: 90%;
+    height: 10%;
     margin: 0;
     padding: 0;
 `
@@ -42,7 +48,7 @@ const ThisMonth = styled.div`
 
 const Button = styled.button`
     width: 5%;
-    height: 50%;
+    height: 100%;
     white-space:nowrap;
     margin: 0;
     border: none;

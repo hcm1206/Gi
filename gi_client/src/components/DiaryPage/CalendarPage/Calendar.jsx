@@ -1,17 +1,20 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import moment from 'moment';
 
-import CalendarDay from "./CalendarDay";
 import CalendarTop from "./CalendarTop";
+import CalendarTable from "./CalendarTable";
 
 
+function Calander(props) {
 
-function Calander() {
+    const year = props.year;
+    const month = props.month;
+
     return (
         <Wrapper>
-            <CalendarTop/>
-            <CalendarDay/>
-            <CalendarDay/>
+            <CalendarTop year={year} month={month}/>
+            <CalendarTable year={year} month={month}/>
         </Wrapper>
     )
 }
@@ -19,7 +22,7 @@ function Calander() {
 const Wrapper = styled.div`
     width: 100%;
     height: 100%;
-    margin: 0;
+    margin: 2.5% 5%;
     padding: 0;
 `
 
