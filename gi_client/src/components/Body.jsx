@@ -13,7 +13,7 @@ function Body() {
             <Routes>
                 <Route exact path='/' element={<FrontPage/>}/>
                 <Route path='/signup' element={<SignUpPage/>}/>
-                <Route path='/diary/:date' exact element={<CalendarPage/>}/>
+                <Route path='/diary/:date' element={<CalendarPage/>}/>
                 <Route path='/diary' element={<SignUpPage/>}/>
                 <Route path='/*' element={<ErrorPage/>}/>
             </Routes>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import moment from 'moment';
 
@@ -8,13 +8,12 @@ import CalendarTable from "./CalendarTable";
 
 function Calander(props) {
 
-    const year = props.year;
-    const month = props.month;
+    const date = props.date;
 
     return (
         <Wrapper>
-            <CalendarTop year={year} month={month}/>
-            <CalendarTable year={year} month={month}/>
+            <CalendarTop date={date}/>
+            <CalendarTable date={date}/>
         </Wrapper>
     )
 }

@@ -9,14 +9,11 @@ const TBDOnClick = () => {
 
 function HeaderMenu() {
 
-    const year = moment().year();
-    const month = moment().month()+1;
-
     return (
         <HeadMenuWrapper>
             <HeadMenuUl>
                 <HeadMenuOpen/>
-                <HeadMenuItem><Link to={`/diary/${year}-${month}`} style={{ textDecoration: 'none', color: "black" }}><HeadMenuLink>Diary</HeadMenuLink></Link></HeadMenuItem>
+                <HeadMenuItem><Link to={`/diary/${moment().year()}-${moment().month()+1}`} style={{ textDecoration: 'none', color: "black" }}><HeadMenuLink>Diary</HeadMenuLink></Link></HeadMenuItem>
                 <HeadMenuItem onClick={TBDOnClick}><HeadMenuLink>TBD</HeadMenuLink></HeadMenuItem>
                 <HeadMenuItem onClick={TBDOnClick}><HeadMenuLink>TBD</HeadMenuLink></HeadMenuItem>
                 <HeadMenuItem onClick={TBDOnClick}><HeadMenuLink>TBD</HeadMenuLink></HeadMenuItem>

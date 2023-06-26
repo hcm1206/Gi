@@ -1,21 +1,44 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+import moment from 'moment';
 
 import CalendarTableWeek from "./CalendarTableWeek";
 import CalendarTableTop from "./CalendarTableTop";
+  
+  
+
+function CalendarTable(props) {
+
+    const date = props.date;
+    const thisMonth = moment(date).month()+1;
+    const startOfMonth = moment(date).startOf("month");
+    const endOfMonth = moment(date).endOf("month");
+    const startDay = startOfMonth.clone();
+    const weeks = [];
+
+    const firstDay = startDay.day();
+    const currentDay = startDay.subtract(firstDay, "day");
 
 
-function CalendarTable() {
+    while (currentDay.isBefore(endOfMonth, "day")) {
+        weeks.push(
+            Array(7)
+                .fill(0)
+                .map(() => {
+                    currentDay.add(1, "day");
+                    return currentDay.clone();
+                })
+        );
+    }
+
+
     return (
         <Wrapper>
             <CalendarTb>
                 <CalendarTableTop/>
-                <CalendarTableWeek/>
-                <CalendarTableWeek/>
-                <CalendarTableWeek/>
-                <CalendarTableWeek/>
-                <CalendarTableWeek/>
-                <CalendarTableWeek/>
+                {weeks.map((week, index) => (
+                        <CalendarTableWeek key={index} week={week} wlength={weeks.length} thisMonth={thisMonth} />
+                ))}
             </CalendarTb>
         </Wrapper>
     )

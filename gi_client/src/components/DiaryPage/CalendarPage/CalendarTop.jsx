@@ -1,23 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import moment from 'moment';
+import { Link } from "react-router-dom";
 
 function CalendarTop(props) {
-    const dt = new Date();
 
     const date = props.date;
-    const dateMonth = moment(date).month();
 
-    console.log(dateMonth);
+    const previousMonth = date.clone().subtract(1, 'month');
+    const nextMonth = date.clone().add(1, 'month');
 
     return (
         <Wrapper>
             <TopContainer>
-                <PrevButton><ButtonSign>〈</ButtonSign></PrevButton>
+                <PrevButton>
+                    <Link to={`/diary/${previousMonth.format('YYYY-MM')}`} style={{ textDecoration: 'none', color: "black" }}>
+                        <ButtonSign>〈</ButtonSign>
+                    </Link>
+                </PrevButton>
                 <ThisMonth>
-                    <h1>{dt.getFullYear()}년 {dt.getMonth()+1}월</h1>
+                    <h1>{date.year()}년 {date.month()+1}월</h1>
                 </ThisMonth>
-                <NextButton><ButtonSign>〉</ButtonSign></NextButton>
+                <NextButton>
+                    <Link to={`/diary/${nextMonth.format('YYYY-MM')}`} style={{ textDecoration: 'none', color: "black" }}>
+                        <ButtonSign>〉</ButtonSign>
+                    </Link>   
+                </NextButton>
             </TopContainer>
         </Wrapper>
     )

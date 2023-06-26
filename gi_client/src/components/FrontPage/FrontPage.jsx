@@ -1,11 +1,12 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import styled from "styled-components";
+import moment from 'moment';
 
 function FrontPage() {
     return (
         <Wrapper>
-            <Link to="/diary" style={{ textDecoration: 'none', color: "black" }}><TextDiv><ServiceP>일기는 일기장에</ServiceP></TextDiv></Link>
+            <Link to={`/diary/${moment().year()}-${moment().month()+1}`} style={{ textDecoration: 'none', color: "black" }}><TextDiv><ServiceP>일기는 일기장에</ServiceP></TextDiv></Link>
         </Wrapper>
     )
 }

@@ -6,19 +6,16 @@ import moment from 'moment';
 import Calander from "./Calendar";
 
 function CalendarPage() {
-    // date 문자열을 current 쿼리로 설정 필요
-    const { date } = useParams();
+    const date = useParams();
+    const dateMoment = moment(date.date);
+    const year = dateMoment.year();
     // const currentDate = moment(`${year}-${month}`, 'YYYY-MM');
 
-    
 
-    // useEffect(() => {
-    //     console.log("현재 날짜 : ",currentDate);
-    //   });
 
     return (
         <Wrapper>
-            <Calander date={date}/>
+            <Calander date={dateMoment}/>
         </Wrapper>
     )
 }
