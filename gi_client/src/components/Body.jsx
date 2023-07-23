@@ -14,12 +14,12 @@ function Body() {
                 <Route exact path='/' element={<FrontPage/>}/>
                 <Route path='/signup' element={<SignUpPage/>}/>
                 <Route path='/diary/:date' element={<CalendarPage/>}/>
-                <Route path='/diary' element={<SignUpPage/>}/>
-                <Route path='/*' element={<ErrorPage/>}/>
+                <Route path="/*" element={<ErrorPage />} />
             </Routes>
         </BodyWrapper>
     )
 }
+
 
 // 높이는 나중에 수정
 const BodyWrapper = styled.div`
