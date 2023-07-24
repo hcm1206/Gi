@@ -1,36 +1,32 @@
 import React, { useState, useEffect } from "react";
+import { useParams, Navigate } from "react-router-dom";
 import styled from "styled-components";
-import { useParams, Navigate } from 'react-router-dom';
 import moment from 'moment';
 
-import Calander from "./Calendar";
+import { isValidDate } from "../../../functions/DiaryFunctions";
 
-import { isValidMonth } from "../../../functions/DiaryFunctions";
 
-function CalendarPage() {
-
+function DiaryWritePage(props) {
     const date = useParams();
-
     const dateMoment = moment(date.date);
 
-    if (!isValidMonth(dateMoment)) {
+    if (!isValidDate(dateMoment)) {
       // 유효하지 않은 date 값이면 NotFoundPage로 리디렉션
       return <Navigate to="/ErrorPage"/>;
     }
 
     return (
         <Wrapper>
-            <Calander date={dateMoment}/>
+            <h1>일기 작성 페이지</h1>
         </Wrapper>
     )
 }
 
-
 const Wrapper = styled.div`
     width: 100%;
-    height: 85vh;
+    height: 100%;
     margin: 0;
     padding: 0;
 `
 
-export default CalendarPage;
+export default DiaryWritePage;

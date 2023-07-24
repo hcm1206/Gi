@@ -9,7 +9,7 @@ function HeaderTop() {
         <HeaderTopWrapper>
             <LogoWrapper>
                 <Link to="/">
-                    <LogoImg src="imgs/Gi_Logo.png" alt="Gi Logo"/>
+                    <LogoImg src="/assets/imgs/Gi_Logo.png" alt="Gi Logo"/>
                 </Link>
             </LogoWrapper>
             <H1>Welcome To Gi Project</H1>
