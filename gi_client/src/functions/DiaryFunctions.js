@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-function isValidMonth(date) {
+const isValidMonth = (date) => {
     const dateFormat = 'YYYY-MM';
     const minDate = '1900-01';
     const maxDate = '2099-12';
@@ -12,7 +12,7 @@ function isValidMonth(date) {
     );
 }
 
-function isValidDate(date) {
+const isValidDate = (date) => {
     const dateFormat = 'YYYY-MM-DD';
     const minDate = '1900-01-01';
     const maxDate = '2099-12-31';
